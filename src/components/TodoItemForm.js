@@ -10,6 +10,12 @@ class TodoItemForm extends Component {
       todotext: e.target.value
     });
   };
+  handleAdd = handleAddTodo => {
+    handleAddTodo(this.state.todotext);
+    this.setState({
+      todotext: ""
+    });
+  };
   render() {
     const { handleAddTodo } = this.props;
     return (
@@ -21,9 +27,7 @@ class TodoItemForm extends Component {
           value={this.state.todotext}
           placeholder="wat to do?"
         />
-        <button onClick={() => handleAddTodo(this.state.todotext)}>
-          Submit
-        </button>
+        <button onClick={() => this.handleAdd(handleAddTodo)}>Submit</button>
       </div>
     );
   }
