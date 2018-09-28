@@ -1,13 +1,28 @@
 .todo-item {
-    background:pink;
+  background: pink;
 
-    margin:10px;
-    padding:7px;
+  margin: 10px;
+  padding: 7px;
 
-    button {
-        float:right;
+  button {
+    float: right;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    background: white;
+    outline: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    &:hover {
+      color: #fff;
+      background: lightcoral;
     }
-    &.complete {
-        background:lightblue;
-    }
+  }
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  &.complete {
+    background: lightblue;
+  }
 }
