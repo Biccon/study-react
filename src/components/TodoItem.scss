@@ -1,7 +1,13 @@
 .todo-item {
     background:pink;
 
-    .complete {
+    margin:10px;
+    padding:7px;
+
+    button {
+        float:right;
+    }
+    &.complete {
         background:lightblue;
     }
 }

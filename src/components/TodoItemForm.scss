@@ -1,0 +1,24 @@
+.todo-form {
+    display:flex;
+    justify-content: center;
+    width:600px;
+    margin:30px auto;
+
+    input {
+        width:400px;
+        height:40px;
+        border:0;
+        outline:0;
+        font-size:20px;
+        padding:5px;
+        box-sizing:border-box;
+        vertical-align: middle;
+    }
+
+    button {
+        height:40px;
+        box-sizing: border-box;
+        padding: 5px;
+        vertical-align: middle;
+    }
+}

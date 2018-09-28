@@ -1,10 +1,14 @@
 import React, { Component } from "react";
-import TodoItemList from './components/TodoItemList';
 import { hot } from "react-hot-loader";
+import TodoWrapper from "./components/TodoWrapper";
 
 class App extends Component {
   render() {
-    return <TodoItemList />;
+    return (
+      <div>
+        <TodoWrapper />
+      </div>
+    );
   }
 }
 
